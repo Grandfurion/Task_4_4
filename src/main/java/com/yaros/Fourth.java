@@ -1,5 +1,6 @@
 package com.yaros;
 
+import java.io.Console;
 import java.util.Scanner;
 
 public class Fourth {
@@ -7,7 +8,28 @@ public class Fourth {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         double a = scanner.nextInt();
-        int[] d = new int[] {0,1};
+        boolean prost = false;
+
+        for(int i = 2; i < 10; i++){
+
+            if (a%i != 0 && a > i){
+                continue;
+            }
+
+            if(a % i == 0 && a <= i){
+                prost = true;
+            }
+            break;
+        }
+
+        if(prost){
+            System.out.println("prostoe");
+        }
+        else{
+            System.out.println("slojnoe");
+        }
+
+/*        int[] d = new int[] {0,1};
 
         for(int i = 0; d[0] < Math.sqrt(a) || d[1] < Math.sqrt(a); i++){
 
@@ -30,5 +52,6 @@ public class Fourth {
 
             break;
         }
+*/
     }
 }
