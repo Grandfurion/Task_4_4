@@ -1,10 +1,8 @@
 package com.yaros;
 
-import java.io.Console;
 import java.util.Scanner;
 
 public class Fourth {
-//не работает
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         double a = scanner.nextInt();
